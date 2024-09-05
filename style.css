@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+header {
+    background-color: olivedrab;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Lexend', sans-serif;
+}
