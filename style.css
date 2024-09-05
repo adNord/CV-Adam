@@ -7,3 +7,29 @@ header {
     padding: 1rem 0;
     font-family: 'Lexend', sans-serif;
 }
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    transition: transform 0.2s ease;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+li a:hover {
+    /* text-decoration: underline; */
+    transform: scale(1.5);
+}
