@@ -68,18 +68,18 @@ main {
 /* Footer + länkar */
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #252525;
+    color: white;
     text-align: center; 
     width: 100%;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 0.75rem 0;
 }
 
 footer a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -106,10 +106,32 @@ footer a:hover {
 }
 
 .image-container img {
-    max-width: 20rem;
+    display: inline-block;
+    border-radius: 1rem;
+    max-width: 25rem;
 }
 
 .text-container {
-    font-size: 1.5rem;
+    font-size: x-large;
     padding: 0 2rem;
+    text-align: left;
+}
+
+/* Stapla bild över text på telefoner*/
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    /* Gör bilden rund och ger en margin mellan text och bild */
+    .image-container img {
+        border-radius: 50%;
+        max-width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        text-align: left; /* Center the text below the image */
+        font-size: medium;
+    }
 }
