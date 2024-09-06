@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend&effect=outline');
 
 body {
-    /* background-color: #f0f4e3; */
     background-color: #faf5e4;
     font-family: 'Lexend', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -37,34 +40,60 @@ nav ul li a {
     transition: transform 0.25s ease;
 }
 
-li a:hover {
+nav ul li a:hover {
     text-decoration: underline;
     transform: scale(1.25);
 }
 
 main {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container, .text-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content-container {
-    display: flex;
-    gap: 1.5rem;
+.image-container img {
+    max-width: 20rem;
 }
 
-.image-card{
-    width: 20rem;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.text-container {
+    font-size: 1.5rem;
+    padding: 0 2rem;
 }
 
-.text-card {
-    width: 20rem;
-    background-color: #fff;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
