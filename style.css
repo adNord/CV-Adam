@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend&effect=outline');
 
+/* Generell styling */
+* {
+    margin: 0;
+}
+
 body {
     background-color: #faf5e4;
     font-family: 'Lexend', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
+
+/* Header och titel */
 
 header {
     background-color: #6b8e23;
@@ -20,6 +26,8 @@ header h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
+/* Navbar + länkar styling */
 
 nav ul{
     list-style: none;
@@ -45,6 +53,8 @@ nav ul li a:hover {
     transform: scale(1.25);
 }
 
+/* Main body */
+
 main {
     flex: 1;
     flex-direction: column;
@@ -54,6 +64,8 @@ main {
     padding: 2rem;
     gap: 3rem;
 }
+
+/* Footer + länkar */
 
 footer {
     background-color: #333;
@@ -76,11 +88,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Custom klasser */
+
+/* Centrera element på en rad */
 .content-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* Bild och text lådor */
 
 .image-container, .text-container {
     flex: 1;
